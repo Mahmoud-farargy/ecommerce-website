@@ -1,0 +1,27 @@
+#trendingItems {
+  padding: 40px 0;
+}
+
+#trendingItems .carousel--chevron--icon {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  color: var(--gray);
+  font-size: 50px;
+  font-weight: 300;
+  background: transparent;
+  z-index: 100;
+}
+
+#trendingItems .carousel--chevron--icon:hover {
+  color: var(--primary-clr);
+}
+
+#trendingItems .carousel--chevron--icon.carousel--chevron--right {
+  right: 5px;
+}
+
+#trendingItems .carousel--chevron--icon.carousel--chevron--left {
+  left: 5px;
+}
+/*# sourceMappingURL=ProductItems.css.map */

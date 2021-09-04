@@ -1,0 +1,22 @@
+#trendingItems{
+    padding: 40px 0;
+    .carousel--chevron--icon{
+        position: absolute;
+        border: none;
+        cursor: pointer;
+        color: var(--gray);
+        font-size: 50px;
+        font-weight: 300;
+        background: transparent;
+        &:hover{
+            color: var(--primary-clr);
+        }
+        z-index: 100;
+    }
+    .carousel--chevron--icon.carousel--chevron--right{
+        right: 5px;
+    }
+    .carousel--chevron--icon.carousel--chevron--left{
+        left: 5px;
+    }
+}

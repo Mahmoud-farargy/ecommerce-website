@@ -1,0 +1,23 @@
+#scrollToTopBtn{
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 159;
+    background-color: var(--primary-clr);
+    border-radius: 50%;
+    color: var(--ultra-white);
+    padding: 9px;
+    width: 43px;
+    height: 43px;
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-medium);
+    margin:0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(1.8);
+    }
+}

@@ -1,0 +1,84 @@
+#homeHero {
+  width: 100%;
+  height: 100%;
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    img {
+      min-height: 400px;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top:50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: block;
+      .hero--occasion {
+        text-transform: capitalize;
+        font-family: var(--clicker-script);
+        color: var(--primary-clr);
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 1px;
+        display: block;
+      }
+      .hero--title {
+        text-transform: capitalize;
+        color: #292621;
+        font-size: 60px;
+        font-weight: var(--font-weight-medium);
+        margin-bottom: 15px;
+      }
+      .hero--description {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        color: var(--text-gray);
+        font-size: 21px;
+        margin-bottom: 30px;
+        font-weight: var(--font-weight-medium);
+        text-shadow: 1px 1px var(--ultra--white);
+      }
+      .hero--invit--btn {
+        text-transform: uppercase;
+        $btnClr: #292621;
+        background-color: $btnClr;
+        padding: 10px 30px;
+        border: none;
+        border: 1px solid $btnClr;
+        color: var(--ultra--white);
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-static-sm);
+        &:hover {
+          background: transparent;
+          color: $btnClr;
+        }
+      }
+    }
+    @media only screen and (max-width: 670px) {
+      .carousel-caption {
+          transform: none !important;
+          right: auto !important;;
+          left:auto !important;
+        .hero--occasion {
+          font-size: 29px;
+        }
+        .hero--description {
+          font-size: var(--font-size-static-lg);
+        }
+        .hero--title {
+          font-size: 27px;
+        }
+        .hero--description {
+          max-width: 95%;
+        }
+      }
+    }
+  }
+}

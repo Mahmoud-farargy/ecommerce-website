@@ -1,0 +1,92 @@
+#fasionPreview{
+    display: grid;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 990px){
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 20px;
+    }
+    @media screen and (max-width: 690px){
+        grid-template-columns: 100% !important;
+        padding: 15px 10px;
+    }
+    .fasion--item{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+        .fasion--item--img{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+            &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 40%;
+                    bottom: 0;
+                    z-index: 1;
+                    background: linear-gradient(to bottom, rgba(41,38,33,0) 0%, #292621 100%);
+                }
+            img{
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover; 
+            }   
+        }
+        
+        .fasion--item--inner{
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            bottom:40px;
+            text-align:center;
+            $transition400: 0.4s;
+            transition: $transition400;
+            h4{
+                text-transform: capitalize;
+                color: var(--ultra-white);
+                font-size: var(--font-size-x-large);
+                font-weight: var(--font-weight-xtra-heavy);
+                margin-bottom: 15px;
+            } 
+            transform: translateY(20px);
+
+            .fasion--hover--drawer{
+                transition: $transition400;
+               opacity: 0;
+               visibility: hidden;
+               
+            }
+        }
+        // responsive
+        @media screen and (min-width:670px) {
+            &:hover{
+                    .fasion--item--inner{
+                            transform: translateY(0);
+                            .fasion--hover--drawer{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                    }
+            }
+        }
+
+        @media screen and (max-width:670px) {
+            .fasion--item--inner{
+                transform: translateY(0);
+                .fasion--hover--drawer{
+                    opacity: 1;
+                    visibility: visible;
+                }
+        }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,4BAA4B;EACzC,cAAc,EAAE,+BAA+B;EAC/C,cAAc,EAAE,UAAU;CAI7B;;AARD,AAKI,gBALY,CAKZ,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "SimilarProducts.scss"
+    ],
+    "names": [],
+    "file": "SimilarProducts.css"
+}

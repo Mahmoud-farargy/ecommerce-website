@@ -1,0 +1,106 @@
+#testimonials {
+  width: 100%;
+  height: auto;
+  background-color: var(--secondary-clr);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#testimonials .carousel-inner > .carousel-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testimonials .carousel-inner > .carousel-item .carousel-caption {
+  color: #292621;
+  position: static;
+}
+
+#testimonials #testimonial--item {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#testimonials #testimonial--item .testi--title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 20px;
+}
+
+#testimonials #testimonial--item .testi--description {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#testimonials #testimonial--item .testi--author--img {
+  width: 63px;
+  height: 63px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#testimonials #testimonial--item .testi--author--info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+#testimonials #testimonial--item .testi--author--info .testi--author--inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+}
+
+#testimonials #testimonial--item .testi--author--info .testi--author--inner .testi--author--name {
+  text-transform: capitalize;
+  font-size: var(--font-size-static-sm);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+}
+
+#testimonials #testimonial--item .testi--author--info .testi--author--inner .testi--role {
+  margin-bottom: 0;
+  color: var(--text-gray);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+}
+
+@media screen and (max-width: 670px) {
+  #testimonials #testimonial--item {
+    max-width: 80%;
+  }
+  #testimonials #testimonial--item .testi--description {
+    font-size: 18px;
+  }
+  #testimonials #testimonial--item .testi--author--info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #testimonials #testimonial--item .testi--author--info .testi--author--inner {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #testimonials #testimonial--item .testi--author--info .testi--author--inner .testi--author--name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #testimonials #testimonial--item {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=Testimonials.css.map */

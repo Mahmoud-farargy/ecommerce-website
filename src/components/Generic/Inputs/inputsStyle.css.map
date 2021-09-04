@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAA;EACjB,cAAc,EAAE,UAAU;CAC7B",
+    "sources": [
+        "inputsStyle.scss"
+    ],
+    "names": [],
+    "file": "inputsStyle.css"
+}

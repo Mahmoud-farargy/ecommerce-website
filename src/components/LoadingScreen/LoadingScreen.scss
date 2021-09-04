@@ -1,0 +1,32 @@
+#loadingScreen.page--loading{
+        @keyframes spin {
+          to {
+            transform: rotateZ(360deg);
+          }
+        }
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--ultra-white);
+        z-index: 99999;
+        margin: 0 auto;
+        -webkit-transition: all 0.6s;
+        transition: all 0.6s;
+        justify-content: center;
+        align-items:center;
+        span {
+          display: block;
+          margin: 0 auto;
+          width:60px;
+          height: 60px;
+          border: 4px solid transparent;
+          border-top-color: var(--primary-clr);
+          border-radius: 50%;
+          animation: spin ease 1000ms infinite;
+          -webkit-animation: spin ease 1000ms infinite;
+        }
+}

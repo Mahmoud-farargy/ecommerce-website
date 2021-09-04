@@ -1,0 +1,82 @@
+#latestNews {
+  padding-top: var(--container-padding-top);
+  padding-bottom: 20px;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+#latestNews h2.section--title {
+  text-align: center;
+}
+
+#latestNews .news--list {
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 5px;
+  padding: 25px 0;
+  gap: 25px 0;
+}
+
+#latestNews .news--list #latestNewsItem {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#latestNews .news--list #latestNewsItem:hover .news--title {
+  color: var(--primary-clr);
+}
+
+#latestNews .news--list #latestNewsItem img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#latestNews .news--list #latestNewsItem .news--category {
+  color: var(--text-gray);
+  font-size: var(--font-size-static-md);
+  font-weight: var(--font-weight--light);
+  margin: 17px 0;
+  text-transform: capitalize;
+  display: block;
+}
+
+#latestNews .news--list #latestNewsItem .news--title {
+  -webkit-transition: var(--little-transition);
+  transition: var(--little-transition);
+  color: var(--ultra-black);
+  font-weight: var(--font-weight-xtra-heavy);
+  font-size: var(--font-size-x-large);
+  text-transform: capitalize;
+}
+
+#latestNews .news--list #latestNewsItem .news--snippet {
+  color: var(--text-gray);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#latestNews .news--list #latestNewsItem .news--link {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-static-md);
+  color: var(--ultra-black);
+  text-transform: capitalize;
+  text-decoration: underline;
+  -webkit-transition: var(--little-transition);
+  transition: var(--little-transition);
+}
+
+#latestNews .news--list #latestNewsItem .news--link:hover {
+  letter-spacing: 0.5px;
+}
+/*# sourceMappingURL=LatestNews.css.map */

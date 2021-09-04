@@ -1,0 +1,76 @@
+#testimonials{
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-clr);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .carousel-inner > .carousel-item{
+        justify-content: center;
+        .carousel-caption{
+           color: #292621;
+           position: static;
+        }
+    }
+    #testimonial--item{
+        max-width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        .testi--title{
+            font-size: var(--font-size-large);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: 20px;
+        }
+        .testi--description{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .testi--author--img{
+            width: 63px;
+            height: 63px;
+            object-fit: contain;
+        }
+        .testi--author--info{
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            .testi--author--inner{
+                justify-content: center;
+                text-align: center;
+                margin-left: 25px;
+                .testi--author--name{
+                    text-transform: capitalize;
+                    font-size: var(--font-size-static-sm);
+                    font-weight:var(--font-weight-medium);
+                    text-align: left;
+                }
+                .testi--role{
+                    margin-bottom: 0;
+                    color: var(--text-gray);
+                    font-size: var(--font-size-small);
+                    font-weight: var(--font-weight-medium);
+                }
+            }
+        }
+        @media screen and (max-width: 670px) {
+            max-width: 80%;
+            .testi--description{
+                font-size: 18px;
+            }
+            .testi--author--info { 
+                flex-wrap: wrap;
+                flex-direction: column !important;
+                .testi--author--inner{
+                    margin-top: 20px;
+                    margin-left: 0;
+                    .testi--author--name{
+                        text-align: center;
+                    }
+                } 
+            }
+        }
+        @media screen and (max-width: 440px) {
+            max-width: 90%;
+        }
+    }
+}

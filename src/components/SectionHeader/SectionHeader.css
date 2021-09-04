@@ -1,0 +1,51 @@
+#sectionHeader {
+  background-color: var(--secondary-clr);
+  padding: 30px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sectionHeader h2 {
+  font-size: 35px;
+  margin-bottom: 12px;
+  font-weight: var(--font-weight-medium);
+  text-transform: capitalize;
+}
+
+#sectionHeader .section--header--links {
+  padding: 0;
+}
+
+#sectionHeader .section--header--links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--text-gray);
+  margin-right: 5px;
+}
+
+#sectionHeader .section--header--links a::after {
+  content: "|";
+  color: inherit;
+  padding-left: 5px;
+}
+
+#sectionHeader .section--header--links a:last-of-type::after {
+  content: "";
+  display: none;
+  width: 0;
+}
+
+#sectionHeader .section--header--links a:hover {
+  text-decoration: underline;
+}
+
+#sectionHeader .section--header--links a.current--section--link {
+  opacity: 0.7;
+  text-decoration: none;
+}
+/*# sourceMappingURL=SectionHeader.css.map */

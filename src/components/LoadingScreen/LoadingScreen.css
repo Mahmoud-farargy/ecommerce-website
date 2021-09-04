@@ -1,0 +1,47 @@
+#loadingScreen.page--loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--ultra-white);
+  z-index: 99999;
+  margin: 0 auto;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+#loadingScreen.page--loading span {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border: 4px solid transparent;
+  border-top-color: var(--primary-clr);
+  border-radius: 50%;
+  animation: spin ease 1000ms infinite;
+  -webkit-animation: spin ease 1000ms infinite;
+}
+/*# sourceMappingURL=LoadingScreen.css.map */
