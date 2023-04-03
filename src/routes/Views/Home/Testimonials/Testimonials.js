@@ -23,7 +23,6 @@ const Testimonials = ({ tesiStaticData }) => {
                   <Carousel.Item
                     key={item.id || index}
                     interval={5000}
-                    className="flex-column"
                   >
                     <Carousel.Caption>
                       <div id="testimonial--item" className="blockquote flex-column">
